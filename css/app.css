@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: #1a1c1e;
+    color: #e2e4e6;
+    font-family: "Inter", sans-serif;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 270px;
+    background-color: #232528;
+    border-right: 1px solid #2f3235;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #2f3235;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.history-list {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.history-item {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #2f3135;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.history-item:hover {
+    background-color: #3a3d41;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.upload-block {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #10a37f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #0d8c6e;
+}
+
+.result-area {
+    background-color: #232528;
+    border: 1px solid #2f3235;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #232528;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    border: 1px solid #2f3235;
+}
+
+.close-btn {
+    margin-top: 10px;
+    background-color: #444;
+    padding: 8px 10px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #555;
+}
+
+.new-chat-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #10a37f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.new-chat-btn:hover {
+    background-color: #0d8c6e;
+}
+
+.primary-btn {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    background-color: #10a37f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #0d8c6e;
+}
+
+.result-card {
+    background-color: #232528;
+    border: 1px solid #2f3235;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+    color: #e3e3e3;
+    font-family: Inter, sans-serif;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    color: #e5e5e5;
+}
+
+.text-box, .translation-box {
+    background-color: #1f2022;
+    border: 1px solid #2d2f31;
+    border-radius: 8px;
+    padding: 14px;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.file-box {
+    margin-bottom: 20px;
+}
+
+.file-label {
+    opacity: 0.7;
+}
+
+.file-path {
+    object-fit: cover;
+    margin-top: 5px;
+    background-color: #1f2022;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #2d2f31;
+    font-size: 14px;
+    width: 200px;
+    height: 200px;
+}
+
+.translate-actions {
+    display: flex;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.translate-btn {
+    padding: 10px 18px;
+    background-color: #10a37f;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+
+.translate-btn:hover {
+    background-color: #0d8c6c;
+}
+
+.placeholder {
+    color: #999;
+}
+
+.btnExit {
+    font-size: 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    background-color: #2f3135;
+    padding: 10px 20px;
+    color: red;
+}
+
+.containerExit {
+    margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+video {
+    width: 300px;
+    height: 300px;
+}
